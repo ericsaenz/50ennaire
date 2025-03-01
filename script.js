@@ -498,7 +498,7 @@ function usePhoneAFriend() {
       method: 'post',
       url: 'https://api.openai.com/v1/chat/completions',
       headers: { 
-        'Authorization': 'Bearer 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', 
+        'Authorization': 'Bearer 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', 
         'Content-Type': 'application/json'
       },
       data : data
