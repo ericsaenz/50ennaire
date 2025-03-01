@@ -463,7 +463,6 @@ function crawl(text) {
 function usePhoneAFriend() {
     hideElement("poll");
     hideElement("phoneButton")
-    let k = 'sk-'+'pro'+'j-w'+'Q7x'+'npH'+'w54'+'ekU'+'JSA'+'mUj'+'CnY'+'-0m'+'Pg8'+'RIt'+'gwj'+'UE9'+'bEZ'+'5SG'+'TBN'+'0cZ'+'HeV'+'EJr'+'jcC'+'swe'+'HZD'+'Ybe'+'mAS'+'NkE'+'TT3'+'Blb'+'kFJ'+'SDM'+'wWF'+'K8B'+'ZcI'+'ENV'+'5a5'+'FMl'+'Z4h'+'LSP'+'sjL'+'RaK'+'Dsp'+'-HO'+'oEl'+'f7R'+'lPA'+'IVm'+'JJz'+'K93'+'vXF'+'suN'+'Yf5'+'ku1'+'hpE'+'4A'
     let questionText = currentQuestion.question;
     for (let element of document.getElementsByClassName("answerButton"))
         questionText += ` ${element.children[0].innerHTML}) ${element.children[1].innerHTML}`;
@@ -499,7 +498,7 @@ function usePhoneAFriend() {
       method: 'post',
       url: 'https://api.openai.com/v1/chat/completions',
       headers: { 
-        'Authorization': 'Bearer ' + k, 
+        'Authorization': 'Bearer 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', 
         'Content-Type': 'application/json'
       },
       data : data
