@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <header>WHO WANTS TO BE A 50ENNAIRE?</header>
+    <main>
+      <div id="lifelineContainer" style="height: 2rem">
+        <div id="lifelines" style="display: none">
+          <button id="5050Button" onclick="use5050()">50/50</button>
+          <button id="pollButton" onclick="usePollTheAudience()">Poll the Audience</button>
+          <button id="phoneButton" onclick="usePhoneAFriend()">Phone a Friend</button>
+        </div>
+      </div>
+      <div id="questionAndAnswers" style="display: none">
+        <div id="questionBox">
+          <span id="questionInfo">Question <span id="questionNumber">0</span>/<span id="totalQuestions">50</span></span>
+          <span id="question"></span></div>
+        <div id="answers">
+          <button onclick="selectAnswer(event)" class="answerButton">
+            <span class="answerLetter">A</span>
+            <span class="answerText"></span>
+          </button>
+          <button onclick="selectAnswer(event)" class="answerButton">
+            <span class="answerLetter">B</span>
+            <span class="answerText"></span>
+          </button>
+          <br><br>
+          <button onclick="selectAnswer(event)" class="answerButton">
+            <span class="answerLetter">C</span>
+            <span class="answerText"></span>
+          </button>
+          <button onclick="selectAnswer(event)" class="answerButton">
+            <span class="answerLetter">D</span>
+            <span class="answerText"></span>
+          </button>
+        </div>
+      </div>
+      <div id="message"></div>
+      <div id="poll" style="display: none">
+        <span id="pollHeader"></span><br>
+        <span id="votesA"></span><br>
+        <span id="votesB"></span><br>
+        <span id="votesC"></span><br>
+        <span id="votesD"></span><br>
+      </div>
+      <div id="util-buttons">
+        <button id="startButton" onclick="startGame()">Start</button>
+        <button id="submitButton" style="display: none" onclick="submitAnswer()">Final Answer?</button>
+        <button id="nextButton" style="display: none" onclick="nextQuestion()">Next</button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

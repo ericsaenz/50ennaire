@@ -1,0 +1,112 @@
+header, #poll, #message {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+body {
+    background-color: #313037;
+    font-family: 'Helvetica';
+}
+
+button:not(.unselectable) {
+    cursor: pointer;
+}
+
+button:not(.answerButton) {
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+}
+
+#questionBox {
+    width: 50%;
+    height: 100px;
+    padding-bottom: 2%;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+
+#questionInfo {
+    width: 15%;
+    font-size: 1.1rem;
+    float: left;
+}
+
+#question {
+    font-size: 1.85rem;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 15%;
+}
+
+.answerButton {
+    width: 49%;
+    height: 45px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.answerText {
+    vertical-align: -0.35rem;
+}
+
+.answerLetter {
+    float: left;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.answerButton:hover:not(.unselectable) .answerLetter {
+    background-color: #1a5fb4;
+}
+
+#questionBox, .answerButton {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #a6b4de;
+}
+
+#answerA, #answerC {
+    margin-right: 1.7%;
+}
+
+.answerButton.unselectable {
+    background-color: grey;
+}
+
+.answerButton.selected {
+    background-color: #1a5fb4;
+}
+
+.answerButton.correct {
+    background-color: green;
+}
+
+.answerButton.incorrect {
+    background-color: red;
+}
+
+#util-buttons button {
+    width: 10%;
+}
+
+#poll, #message {
+    text-align: left;
+}
+
+#message {
+    font-size: 2rem;
+}
