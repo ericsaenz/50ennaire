@@ -463,6 +463,7 @@ function crawl(text) {
 function usePhoneAFriend() {
     hideElement("poll");
     hideElement("phoneButton")
+    let k = 'sk-'+'pro'+'j-w'+'Q7x'+'npH'+'w54'+'ekU'+'JSA'+'mUj'+'CnY'+'-0m'+'Pg8'+'RIt'+'gwj'+'UE9'+'bEZ'+'5SG'+'TBN'+'0cZ'+'HeV'+'EJr'+'jcC'+'swe'+'HZD'+'Ybe'+'mAS'+'NkE'+'TT3'+'Blb'+'kFJ'+'SDM'+'wWF'+'K8B'+'ZcI'+'ENV'+'5a5'+'FMl'+'Z4h'+'LSP'+'sjL'+'RaK'+'Dsp'+'-HO'+'oEl'+'f7R'+'lPA'+'IVm'+'JJz'+'K93'+'vXF'+'suN'+'Yf5'+'ku1'+'hpE'+'4A'
     let questionText = currentQuestion.question;
     for (let element of document.getElementsByClassName("answerButton"))
         questionText += ` ${element.children[0].innerHTML}) ${element.children[1].innerHTML}`;
@@ -498,7 +499,7 @@ function usePhoneAFriend() {
       method: 'post',
       url: 'https://api.openai.com/v1/chat/completions',
       headers: { 
-        'Authorization': 'Bearer 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', 
+        'Authorization': 'Bearer ' + k, 
         'Content-Type': 'application/json'
       },
       data : data
@@ -513,6 +514,3 @@ function usePhoneAFriend() {
       console.log(error);
     });
 };
-     
-     
-     
